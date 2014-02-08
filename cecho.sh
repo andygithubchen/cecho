@@ -61,7 +61,7 @@ cecho()
 	local msg=
 	
 	local version_info='cecho \
-		cecho -B 0.15 -n \
+		cecho -B 0.2 -n \
 		Written -B by -B Springlie -B "<springlie@163.com>".'
 
 	local help_info='cecho \

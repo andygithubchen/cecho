@@ -126,11 +126,11 @@ or
 
 #### CECHO_IS_IMPORTED ####
 
-When you source `cecho`, `CECHO_IS_IMPORTED=1` will be exported. 
+Once you have sourced `cecho`, `CECHO_IS_IMPORTED=1` will be defined. 
 
 That meams you can check this var `CECHO_IS_IMPORTED` to confirm if in a no_cecho env or not:
 
-Exp: [This Sence](https://github.com/springlie/cecho#my-script-maybe-runs-in-both-no-cecho-env-and-cecho-env/)
+Exp: [Sence 2](https://github.com/springlie/cecho#2-my-script-maybe-runs-in-both-no-cecho-env-and-cecho-env/)
 
 #### CECHO_IS_INACTIVE ####
 
@@ -140,11 +140,11 @@ When you use `cecho` but want it inactive temply, set `CECHO_IS_INACTIVE=1` befo
 
 ## Sence ##
 
-##### I want my script outputs to file/pipe without color_ctrl chars" #####
+##### 1 - I want my script outputs to file/pipe without color_ctrl chars #####
 
 Needn't do any change, `cecho` can self-adapting this: colorful for stdout, non-colorful for file/pipe.
 
-##### My script maybe runs in both "no-cecho env" and "cecho env" #####
+##### 2 - My script maybe runs in both "no-cecho env" and "cecho env" #####
 
 Unfortunately, you have to write your script like this:
 
@@ -159,7 +159,7 @@ Or shortly:
 
 	[ -z "$CECHO_IS_IMPORTED" ] && echo "hello world" || cecho -r -bg -hl hello -B world
 
-##### My script uses `cecho` but I want it disabled temply #####
+##### 3 - My script uses `cecho` but I want it disabled temply #####
 
 	CECHO_IS_INACTIVE=1
 	cecho -r -bg -hl hello world	# <-- now cecho is inactive

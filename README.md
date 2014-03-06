@@ -95,10 +95,10 @@ The short formats is easily memorized, which are nearly just the heads the long 
 
 ##### set fg to red: #####
 	
-	cecho -r "hello world !"
+	cecho -r "hello world ! "
 or
 
-	cecho -red "hello world !"
+	cecho -red "hello world ! "
 
 or
 
@@ -110,7 +110,7 @@ or
 
 ##### set fg to red, bg to yellow, action to highlight and underline: #####
 
-	cecho -r -by -hl "hello world !"
+	cecho -r -by -hl "hello world ! "
 
 ##### set [ red, yellow, highlight & underline ] for "hello", [ cyan, red, reverse ] for "world", [ green, black, blink ] for "!" : #####
 

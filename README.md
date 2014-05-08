@@ -22,7 +22,9 @@ Tested in [zsh](http://www.zsh.org/) and [bash](http://www.gnu.org/software/bash
 
 ## Install ##
 
-Before use `cecho`, simply source it in your .zshrc, or any shell script wanted to colorize like this: `source /path/to/cecho.sh`
+Before use `cecho`, simply source it in your .zshrc, or any shell script wanted to colorize like this: 
+
+	source /path/to/cecho.sh
 
 ## Usage ##
 

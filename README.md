@@ -1,14 +1,12 @@
 # cecho #
 
-Colorful `echo` for unix-like shell ( ascii color only )
+Colorful `echo` for unix-like shell ( ascii color only ), decorate your life between command line and shell script with more colors.
 
 ----------
 
 ## Overview ##
 
-A **light**, **self-adapting** wrapper of `echo`, with several useful features, such as color switches for **foreground**, **background** and **action** ( highlight, underline, blink ... ).
-
-Decroate your life between command line and shell script with more colors.
+A **light**, **self-adapting** wrapper of `echo` with several useful features, makes easy work for changing **foreground**, **background** and **text action** ( highlight, underline, blink ... ).
 
 Tested in [**zsh**](http://www.zsh.org/) and [**bash**](http://www.gnu.org/software/bash/).
 
@@ -38,9 +36,9 @@ Support setting foreground, background and action
 
 	cecho -fg_color -bg_color -action message [...] [ -done ]
 
-**All switches have two forms, short for convenience, long for readability.**
+All switches have **two** forms, short for convenience, long for readability.
 
-The short forms are the abbreviation from the corresponding long forms,
+The short forms are the abbreviation from the corresponding long forms.
 
 #### Foreground color arguments ##
 
@@ -146,7 +144,7 @@ If you want to deactive `cecho` temporarily, set `CECHO_IS_INACTIVE=1` before ca
 
 ##### 1 - I want my script outputs to file/pipe without color_ctrl chars #####
 
-Needn't do any change, `cecho` can self-adapting this: colorful for stdout, non-colorful for file/pipe.
+No need to do any change, `cecho` can self-adapt this: colorful for stdout, non-colorful for file/pipe.
 
 ##### 2 - My script maybe runs in both "no-cecho env" and "cecho env" #####
 

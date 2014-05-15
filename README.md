@@ -1,12 +1,14 @@
 # cecho #
 
-Colorful echo for unix-like shell ( ascii color only )
+Colorful `echo` for unix-like shell ( ascii color only )
 
 ----------
 
 ## Overview ##
 
-A **light**, **self-adapting** wrapper of `echo`, with several useful features, such as color switches for **foreground**, **background** and **action** ( highlight, underline, blink ... ) . Decroate your life between command line and shell script with more colors.
+A **light**, **self-adapting** wrapper of `echo`, with several useful features, such as color switches for **foreground**, **background** and **action** ( highlight, underline, blink ... ).
+
+Decroate your life between command line and shell script with more colors.
 
 Tested in [**zsh**](http://www.zsh.org/) and [**bash**](http://www.gnu.org/software/bash/).
 
@@ -177,7 +179,7 @@ Or shortly:
 
 ## What's more ##
 
-Another **C version** project is [coprintf](https://github.com/springlie/coprintf).
+Another **C version** project is [**coprintf**](https://github.com/springlie/coprintf).
 
 ## Thanks ##
 

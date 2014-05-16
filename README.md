@@ -1,12 +1,13 @@
 # cecho #
 
-Colorful `echo` for unix-like shell ( ascii color only ), decorate your life between command line and shell script with more colors.
+Colorful `echo` for unix-like shell ( ascii color only ), decorate your terminal with more colors.
 
+----------
 ----------
 
 ## Overview ##
 
-A **light**, **self-adapting** wrapper of `echo` with several useful features, makes easy work for changing **foreground**, **background** and **text action** ( highlight, underline, blink ... ).
+A light, self-adapting wrapper of `echo` with several useful features, makes easy work for changing **foreground**, **background** and **text action** ( highlight, underline, blink ... ).
 
 Tested in [**zsh**](http://www.zsh.org/) and [**bash**](http://www.gnu.org/software/bash/).
 
@@ -170,7 +171,7 @@ Or shortly:
 
 ## Advanced ##
 
-- Action flag `-d` ( same as `-done` ) will **turn off all settings** ( fg, bg and action ), Thus, in **single** command, you have to set flags again to retrive it back once there are other strings after `-d`.
+- Action flag `-d` ( same as `-done` ) will turn off all settings ( fg, bg and action ), Thus, in **single** command, you have to set flags again to retrive it back once there are other strings after `-d`.
 - Some special characters ( with centain format ) don't work properly, such as `cecho "!"`. It's due to `echo`... use `cecho '!'` or `cecho !` instead.
 - It's **not** necessary to use `-d` at the begin/end of commands, `cecho` will take care of it.
 - Actions can overlaied.

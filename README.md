@@ -179,7 +179,3 @@ Or shortly:
 ## What's more ##
 
 Another **C version** project is [**coprintf**](https://github.com/springlie/coprintf).
-
-## Thanks ##
-
-Thanks to [https://github.com/jonhiggs/cecho](https://github.com/jonhiggs/cecho), when I completed `cecho` script and try uploading it to github I found this -- with same name and almost same functions ... and then, I got the way to build table in README.md from there.

@@ -23,7 +23,7 @@ Tested in [**zsh**](http://www.zsh.org/) and [**bash**](http://www.gnu.org/softw
 
 ## Install ##
 
-Before use `cecho`, simply source it in your `.zshrc`, or any shell script you want to colorize: 
+Before use `cecho`, simply source it in your `.zshrc` or `.bashrc`, or any shell script you want to colorize: 
 
 	source /path/to/cecho.sh
 

@@ -107,23 +107,21 @@ cecho()
 
 		# escape character
 
-		-B|-blank  |$WS-B|$WS-blank  )msg+=" ";		;;
+		-B|-blank  |$WS-B|$WS-blank  )msg+=" " ;	;;
 		-t|-tab    |$WS-t|$WS-tab    )msg+="\t";	;;
 		-n|-newline|$WS-n|$WS-newline)msg+="\n";	;;
-		#-t| -tab		)	msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo "\t" || echo $INTL_SINGLE_BLANK`;	;;
-		#-n| -newline	)	[ -z $CECHO_IS_INACTIVE_INTL ] && msg+="\n" || msg+=$INTL_SINGLE_BLANK;	;;
 
 		# foreground color
 
-		-bk|-black |$WS-bk|$WS-black       )msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_BLACK || echo $INTL_SINGLE_BLANK`;   ;;
-		-r |-red   |$WS-r |$WS-red	       )msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_RED   || echo $INTL_SINGLE_BLANK`;   ;;
-		-g |-green |$WS-g |$WS-green       )msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_GREEN || echo $INTL_SINGLE_BLANK`;   ;;
-		-y |-yellow|$WS-y |$WS-yellow      )msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_YELLOW|| echo $INTL_SINGLE_BLANK`;   ;;
-		-b |-blue  |$WS-b |$WS-blue	      )msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_BLUE	 || echo $INTL_SINGLE_BLANK`;  ;;
-		-p |-purple|$WS-p |$WS-purple      )msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_PURPLE|| echo $INTL_SINGLE_BLANK`;   ;;
-		-c |-cyan  |$WS-c |$WS-cyan	      )msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_CYAN	 || echo $INTL_SINGLE_BLANK`;  ;;
-		-w |-white |$WS-w |$WS-white       )msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_WHITE || echo $INTL_SINGLE_BLANK`;   ;;
-		-gr|-gray  |$WS-gr|$WS-gray        )msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_WHITE || echo $INTL_SINGLE_BLANK`;   ;;
+		-bk|-black |$WS-bk|$WS-black	)msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_BLACK || echo $INTL_SINGLE_BLANK`;   ;;
+		-r |-red   |$WS-r |$WS-red		)msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_RED   || echo $INTL_SINGLE_BLANK`;   ;;
+		-g |-green |$WS-g |$WS-green	)msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_GREEN || echo $INTL_SINGLE_BLANK`;   ;;
+		-y |-yellow|$WS-y |$WS-yellow	)msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_YELLOW|| echo $INTL_SINGLE_BLANK`;   ;;
+		-b |-blue  |$WS-b |$WS-blue		)msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_BLUE	 || echo $INTL_SINGLE_BLANK`;  ;;
+		-p |-purple|$WS-p |$WS-purple	)msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_PURPLE|| echo $INTL_SINGLE_BLANK`;   ;;
+		-c |-cyan  |$WS-c |$WS-cyan		)msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_CYAN	 || echo $INTL_SINGLE_BLANK`;  ;;
+		-w |-white |$WS-w |$WS-white	)msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_WHITE || echo $INTL_SINGLE_BLANK`;   ;;
+		-gr|-gray  |$WS-gr|$WS-gray		)msg+=`[ -z $CECHO_IS_INACTIVE_INTL ] && echo $FG_WHITE || echo $INTL_SINGLE_BLANK`;   ;;
 
 		# background color
 

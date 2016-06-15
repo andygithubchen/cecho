@@ -45,11 +45,11 @@ cecho()
 
 	# for self-adapting: inactive if output is pipe/file, active if screen
 
-    local CECHO_IS_INACTIVE_INTL=$CECHO_IS_INACTIVE
-    if [ ! -t 1 ]
-    then
-        CECHO_IS_INACTIVE_INTL=1
-    fi
+	local CECHO_IS_INACTIVE_INTL=$CECHO_IS_INACTIVE
+	if [ ! -t 1 ]
+	then
+		CECHO_IS_INACTIVE_INTL=1
+	fi
 
 	# for keeping format when inactive
 
@@ -188,3 +188,4 @@ cecho()
 
 	echo -e $msg
 }
+
